@@ -1,0 +1,41 @@
+include::config.adoc[]
+
+:forgeName: LocationTech
+:aforgeName: a LocationTech
+:namespace: org.locationtech
+:forgeUrl: https://www.locationtech.org
+:createUrl: https://www.locationtech.org/node/add/project-proposal
+:projectListUrl: http://www.locationtech.org/list-of-projects
+:bugzillaUrl: https://www.locationtech.org/bugs
+:gitUrl: https://git.locationtech.org/c
+:gerritUrl: https://git.locationtech.org/r
+:gitHubUrl: https://github.com/locationtech
+:forumsUrl: http://www.locationtech.org/forums
+:mailingListsUrl: http://www.locationtech.org/mail/
+
+LocationTech Project Handbook
+=============================
+
+include::chapters/notices.adoc[]
+
+include::chapters/preamble.adoc[]
+
+include::chapters/starting.adoc[]
+
+include::chapters/resources.adoc[]
+
+include::chapters/paperwork.adoc[]
+
+include::chapters/ip.adoc[]
+
+include::chapters/release.adoc[]
+
+include::chapters/pmi.adoc[]
+
+// include::chapters/community.adoc[]
+
+// include::chapters/links.adoc[]
+
+include::chapters/glossary.adoc[]
+
+include::chapters/contact.adoc[]

@@ -1,0 +1,41 @@
+include::config.adoc[]
+
+:forgeName: PolarSys
+:aforgeName: a PolarSys
+:namespace: org.polarsys
+:forgeUrl: https://www.polarsys.org
+:createUrl: https://www.polarsys.org/node/add/project-proposal
+:projectListUrl: http://www.polarsys.org/list-of-projects
+:bugzillaUrl: https://www.polarsys.org/bugs
+:gitUrl: https://git.polarsys.org/c
+:gerritUrl: https://git.polarsys.org/r
+:gitHubUrl: https://github.com/polarsys
+:forumsUrl: http://www.polarsys.org/forums
+:mailingListsUrl: http://www.polarsys.org/mail/
+
+PolarSys Project Handbook
+=========================
+
+Copyright (C) 2015 Eclipse Foundation, Inc., Made available under the Eclipse Public License v 1.0
+
+include::chapters/preamble.adoc[]
+
+include::chapters/starting.adoc[]
+
+include::chapters/resources.adoc[]
+
+include::chapters/paperwork.adoc[]
+
+include::chapters/ip.adoc[]
+
+include::chapters/release.adoc[]
+
+include::chapters/pmi.adoc[]
+
+// include::chapters/community.adoc[]
+
+// include::chapters/links.adoc[]
+
+include::chapters/glossary.adoc[]
+
+include::chapters/contact.adoc[]

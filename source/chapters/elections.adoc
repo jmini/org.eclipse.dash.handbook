@@ -1,0 +1,104 @@
+[[elections]]
+Elections
+---------
+Roles in a project are assigned based on merit demonstrated in a
+publicly-accessible forum, in the form of an election. Elections
+start with a nomination that contains a statement of merit. The nature
+of a statement of merit varies widely, but is generally expected to
+to concisely state the impact that the nominee has had on the
+project.
+
+NOTE: Employment status has no bearing at whether or not somebody can participate 
+in an open source project at {forgeName}. Employment does not, for example, guarantee
+committer status; committer status must be earned by everybody.
+
+[[elections-committer]]
+Committer Elections
+~~~~~~~~~~~~~~~~~~~
+A committer election starts with a statement of merit for the nominee.
+The statement of merit should, for example, include links to contributions
+made by the nominee (e.g. Git commits, Gerrit reviews, pull requests,
+or Bugzilla records).
+
+Use the {developerPortalUrl}[developer portal] to elect a committer.
+
+Only project committers may vote in a committer election. To be successful, 
+the election must receive a minimum of three positive +pass:[+1]+ votes. 
+Any committer can veto the election by casting a +pass:[-1]+ vote. For projects 
+with three or fewer committers all committers must vote. Committer elections
+run for one week, but will end prematurely if all
+project committers vote +pass:[+1]+.
+
+Following a successful committer vote, the project's PMC will review
+the election results and then either approve or veto the election. 
+An election may be vetoed, for example, if the PMC feels that the
+merit statement is not strong enough.
+
+The <<paperwork, paperwork>> process will automatically be initiated following
+PMC approval of an election. 
+
+[[elections-pl]]
+Project Lead Elections
+~~~~~~~~~~~~~~~~~~~~~~
+Similar to a committer election, a project lead election starts with a
+statement of merit. The merit statement should, rather than focus on
+specific code contributions, focus instad on the leadership qualities
+expressed by the individual.
+
+.Project Lead merit statement
+=====================================================================
+Sounak has been part of the Ogee development since before the initial
+contribution. He played an important role ever since, as he is one of the key
+developers. With regards to the number of commits Sounak is currently the top
+committer of Ogee:
+http://git.eclipse.org/c/ogee/org.eclipse.ogee.git/stats/?period=q&ofs=10
+Apart from that Sounak took care of the project page and the build. For
+release 0.6 he also handled the review formalities for me. Finally I would
+like to mention a blog post he did at odata.org to promote Ogee in the OData
+community:
+http://www.odata.org/blog/eclipse-ogee 
+=====================================================================
+
+Project leads are normally also committers. A project may have more than one
+project lead (so-called 'co-leads').
+
+Use the 'Nominate a Project Lead' link in the 'Committer Tools' block on the
+project's <<pmi,management page>> to start a project lead election.
+
+Only project committers can vote in a project lead election.
+To be successful, a project lead election must receive a minimum of three
+positive +pass:[+1]+ votes. Any committer can veto the election by
+casting a +pass:[-1]+ vote. For projects with three or fewer committers
+all committers must vote. Committer elections run for one week, but will 
+end prematurely if all project committers vote +pass:[+1]+.
+
+Following a successful committer vote, the project's PMC will review
+the election results and then either approve or veto the election. 
+A PMC-approved election will be referred to the EMO/ED as a recommendation
+for appointment. The final decision rests with the EMO/ED.
+
+[[elections-pmc-member]]
+PMC Member Elections
+~~~~~~~~~~~~~~~~~~~~
+The manner in which a top-level project's Project Management Committee 
+(PMC) 'Member' is appointed varies by PMC. Some PMCs are set up to have a 
+representative from each of the projects in the top-level project. Other
+PMCs are more exclusive and run an election similar to that of a project
+lead election. 
+
+In all cases, the PMC Lead makes a recommendation to the EMO/ED to appoint
+a PMC Member. The final decision rests with the EMO/ED.
+
+[[elections-pmc-lead]]
+PMC Lead Appointments
+~~~~~~~~~~~~~~~~~~~~~
+PMC 'Leads' are are not elected. They are vetted by the EMO, approved by 
+the Eclipse Board of Directors, and appointed by the EMO/ED.
+
+[[elections-faq]]
+Frequently Asked Questions
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+[qanda]
+Do we really need to do this? ::
+	Yes.

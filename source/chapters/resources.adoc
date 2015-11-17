@@ -1,0 +1,250 @@
+[[project-resources-and-services]]
+Project Resources and Services
+------------------------------
+Open source projects at the Eclipse Foundation are required to make use
+of certain Eclipse Foundation services:
+
+* All project issues must be tracked in the {bugzillaUrl}[{forgeName} Bugzilla]
+instance;
+* Source code must be maintained in source code repositories assigned to the
+project (e.g. {aforgeName} {gitUrl}[Git] or {gerritUrl}[Gerrit] instance,
+or the {gitHubUrl}[{forgeName} Organization] on GitHub);
+* All third-party libraries used by the project must be tracked and
+approved for use by the Eclipse IP Team;
+* Downloads must be distributed via a forge-specific downloads server;
+* Developer (committer) communication must occur in the _dev_ list
+provided to the project by the Eclipse; and
+* Projects must keep their <<pmi-metadata, Project Metadata>> up-to-date.
+
+[[resources-source]]
+Source Code Management
+~~~~~~~~~~~~~~~~~~~~~~
+Your project must maintain source code in the repositories assigned to the
+project by the Eclipse Foundation. These official repositories must be
+the exclusive source of all project code delivered via the project's assigned
+distribution channel (e.g. the download server).
+
+In order for your project to operate in an _open_ manner, it must be possible
+for potential contributors to have access to the code base in its most current
+form, so all ongoing development must be regularly pushed to these canonical 
+repositories.
+
+[[resources-cla]]
+Contributor License Agreement (CLA)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+The Eclipse Foundation has implemented {claUrl}[Contributor License Agreements] (CLA) 
+to improve <<ip,intellectual property>> (IP) management and workflow. All
+contributors, who are not committers on the {forgeName} project, must sign the CLA.
+
+You do *not* require a CLA to contribute to a project on which you have committer
+status.
+
+[[resources-commit]]
+Git Commit Records
+^^^^^^^^^^^^^^^^^^
+Git commit records are required to take a specific form. The credentials
+of the actual author must be used to populate the +Author+ field. The email 
+address used must match the email address that the Eclipse Foundation has
+on file for the author (case-sensitive).
+
+The commit message is divided into three sections:
+
+. One line (max 72 characters) summary;
+. Description; and
+. Footer.
+
+.Example Git Commit Record
+[source]
+------------------------------------------------------------
+commit d6cf52411377a039fc2906378711091a26e932cb
+Author: Some Body <somebody@somewhere.com> <1>
+Date:   Wed May 29 16:17:36 2013 +0200
+
+    Bug 350686 - Hide unwanted action bar items <2>
+    
+    This change hides unwanted 'Link with Editor' and 
+    'Customize View...' items from the local toolbar 
+    and the view menu.
+    
+    Change-Id: Ia2bd5091303d1b0a738157effc24e4dac5a7d0c7 <3>
+    Also-by: Some Bodyelse <somebodyelse@nowhere.com> <4>
+    Signed-off-by: Some Body <somebody@somewhere.com> <5>
+------------------------------------------------------------
+
+<1> The email address of the author must match the email address on the Eclipse Foundation account.
+<2> Best practice: include the bug id in the commit message summary.
+<3> Gerrit change id (only when pushing to Gerrit for review).
+<4> Additional authors can be added using +Also-by+ entries.
+<5> Non-committers must _sign-off_ the commit using the same email address as used in the author field.
+
+The _summary_ line is used in many places where Git commits are listed, ensure
+that this line is sensible by itself. The _description_ area should be used to provide
+more detail about the commit. The footer area is used for extra fields and values.
+
+If the bug id is included in the summary line (using the form "Bug 12345 - xxx" or "[12345] xxx")
+Gerrit Code Review will automatically add a link in the 
+corresponding Bugzilla record back to the Gerrit record (this, of course, only 
+applies to commits pushed to Gerrit).
+
+The +Change-Id+ is used by <<resources-gerrit,Gerrit Code Review>> to associate new versions 
+of a change back to its original review. This field need only be specified if the 
+repository is managed by Gerrit.
+
+Create a separate +Also-by+ field for each additional author of a commit. This might
+apply, for example, if a commit has been authored via pair-programming, or the commit
+is the result of collapsing multiple commits authored by multiple developers.
+
+Commits that are provided by non-committers must have a +Signed-off-by+ field in the 
+footer indicating that the author is aware of the terms by which the contribution has been
+provided to the project. The non-committer must additionally have an Eclipse Foundation
+account and must have a signed <<resources-cla,Contributor License Agreement>> (CLA)
+on file.
+
+[[resources-git]]
+Git
+^^^
+Those projects that want to use Git on the {forgeName} forge, are assigned a 
+directory in which they may create as many Git repositories as required.
+{gitRequestUrl}[Open a bug] to request that the Webmaster create a new Git
+repository for your project. Alternatively, committers with shell accounts
+can create repositories themselves.
+
+[subs="attributes"]
+.Create a new Git repository
+-----------------------------------------------------
+> initrepo /gitroot/project/{namespace}.repo.name.git
+-----------------------------------------------------
+
+For consistency, the name of the repository must end with +.git+.
+
+To set the description of the repository, use +sftp+ or +scp+ to copy a text file to
++/gitroot/project/{namespace}.repo.name.git/description+. Git repository 
+descriptions should be limited to a paragraph of one or two sentences.
+
+Only project committers can push to {aForgeName} Git repository. A push
+that includes commits that do not conform to the required form will be rejected.
+
+You can {gitUrl}[browse {forgeName} repositories] directly on the Git server.
+
+[[resources-gerrit]]
+Gerrit Code Review
+^^^^^^^^^^^^^^^^^^
+https://www.gerritcodereview.com/[Gerrit] provides web based code review and 
+repository management for the Git version control system. Many projects use
+Gerrit to reduce barriers and encourage contribution to the project.
+{gerritRequestUrl}[Open a bug] to request that the Webmaster configure your
+Git repository for Gerrit. 
+
+Commits may be pushed directly to the Git repository through Gerrit by 
+a project committer (e.g. to the +master+ branch).
+
+Anybody can push to a +refs/for/*+ branch for review in a Gerrit repository. A push
+that includes commits that do not conform to the required form will be rejected.
+Commits intended for review should have a 
+https://git.eclipse.org/r/Documentation/user-changeid.html[+Change-Id+]
+
+You can {gerritUrl}[browse {forgeName} repositories] directly on the Gerrit 
+server.
+
+[[resources-github]]
+GitHub
+^^^^^^
+Projects may opt to move some or all of their canonical source code repositories to the
+{gitHubUrl}[{forgeName} organization] on GitHub.
+
+NOTE: Projects that host source code on GitHub are not permitted to use GitHub
+Issues or Wiki.
+
+{gitHubRequestUrl}[Open a bug] to request that the Webmaster create a new, or move
+an existing, Git repository for your project. The Webmaster will install some 
+_hooks_ on your GitHub repository.
+
+The _Committers hook_ grants designated project committers write access to the 
+GitHub-hosted project repositories. Project committers must use the email address they 
+provide to the Eclipse Foundation as their GitHub email address. 
+
+The <<resources-cla,Contributor License Agreement>> (CLA) hook will inspect incoming 
+GitHub pull requests to ensure that the contributor has a valid CLA on file, and that
+the commit has been "signed-off" as required. Project committers should only merge pull 
+_green_ requests:
+
+image::images/Github-cla-success.png[]
+
+The GitHub API does not give us a means of absolutely denying a merge; all we can 
+do is warn you that the contributors have not signed a CLA:
+
+image::images/Github-cla-failure.png[]
+
+Do not merge unless you are absolutely certain that the contributer does have a 
+valid CLA on file (e.g. the Contributor License Agreement Lookup Tool confirms 
+that they have a CLA).
+
+You must manually check that the commit message includes the 
+required "Signed-off-by" statement in the footer.
+
+The Webmaster creates and maintains a mirror of all GitHub-hosted
+repositories on Eclipse Foundation hardware.
+
+[[resources-libraries]]
+Third-party Libraries
+~~~~~~~~~~~~~~~~~~~~~
+{forgeName} projects must register all of their <<ip-third-party,third-party library>> use with the
+IP Team.
+
+[[resources-forums]]
+Forums and Outbound Communication
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+All projects are assigned a {forumsUrl}[user forum] as a point of contact between
+the user and adopter communities, and the project developers.
+
+The EMO strongly encourages the use of alternative communication channels for
+connecting with the community: your project team knows your community and how
+to best connect with them.
+
+[[resources-website]]
+Project Websites
+~~~~~~~~~~~~~~~~
+Project websites are an excellent way to connect your project with
+your community. Many projects opt to use the <<pmi,Project Management Infrastructure>>
+(PMI) as their project website,
+but if so-desired, a project may host a website on Eclipse Foundation-hosted
+servers. 
+
+Project website sources are hosted in Git repositories maintained by the
+Eclipse Foundation. {websiteRequestUrl}[Open a bug] to request that the Webmaster 
+create a website for your project.
+
+NOTE: Alternative hosting services for project-specific websites are
+not permitted. Websites _not_ hosted by the Eclipse Foundation are
+considered third-party and so are subject to the
+{trademarkGuidelinesUrl}[Guidelines for Eclipse
+Logo & Trademarks] (the Eclipse foundation asserts ownership of the
+project name trademark).
+
+[[resources-builds]]
+Builds
+~~~~~~
+Use of Eclipse Foundation-provided and hosted build services, the so-called
+{cbiUrl}[Common Build Infrastructure] (CBI) is strongly recommended, but n
+ot strictly required. 
+
+Whether or not your project chooses to make use of provided build resources, it must
+be possible for members of the community to build project artifacts from 
+source code with reasonable effort.
+
+[[resources-signing]]
+Signed Artifacts
+^^^^^^^^^^^^^^^^
+Where technically sensible, all downloadable artifacts should
+be {jarSigningUrl}[signed] by an Eclipse Foundation-provided certificate.
+
+[[resources-downloads]]
+Downloads
+~~~~~~~~~
+Project artifacts (e.g. downloads) can be distributed via third-party
+services (e.g. Maven Central), but the Eclipse Foundation-provided
+infrastructure must be considered the primary source of project
+downloads. 
+
+Project committers can {downloadsUrl}[upload project artifacts] to the project's 
+directory on the download server.

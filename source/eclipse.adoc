@@ -1,0 +1,45 @@
+include::config.adoc[]
+
+:forgeName: Eclipse
+:aforgeName: an Eclipse
+:namespace: org.eclipse
+:forgeUrl: https://projects.eclipse.org
+:createUrl: https://projects.eclipse.org/node/add/project-proposal
+:projectListUrl: http://projects.eclipse.org/list-of-projects
+:bugzillaUrl: https://bugs.eclipse.org/bugs
+:gitUrl: https://git.eclipse.org/c
+:gerritUrl: https://git.eclipse.org/r
+:gitHubUrl: https://github.com/eclipse
+:forumsUrl: http://www.eclipse.org/forums
+:mailingListsUrl: http://www.eclipse.org/mail/
+
+:pmiSampleImage: images/pmi-egit25.png
+
+Eclipse Project Handbook
+========================
+
+Copyright (C) 2015 Eclipse Foundation, Inc., Made available under the Eclipse Public License v 1.0
+
+include::chapters/preamble.adoc[]
+
+include::chapters/starting.adoc[]
+
+include::chapters/resources.adoc[]
+
+include::chapters/paperwork.adoc[]
+
+include::chapters/ip.adoc[]
+
+include::chapters/elections.adoc[]
+
+include::chapters/release.adoc[]
+
+include::chapters/pmi.adoc[]
+
+// include::chapters/community.adoc[]
+
+// include::chapters/links.adoc[]
+
+include::chapters/glossary.adoc[]
+
+include::chapters/contact.adoc[]
