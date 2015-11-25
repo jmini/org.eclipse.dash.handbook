@@ -1,1 +1,4 @@
 /output/
+
+# GEF 4 Dot support
+source/images/*.dot.pdf
