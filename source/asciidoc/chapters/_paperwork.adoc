@@ -40,7 +40,12 @@ Documents
 The exact nature of the documentation required is dependent on your
 employments status.
 
-image::images/paperwork.png["Paperwork requirements flowchart.", scaledwidth=75%]
+[graphviz, dot-example, svg]
+.Paperwork requirements flowchart.
+----
+include::../../dotfiles/paperwork.dot[]
+----
+//[scaledwidth=75%]
 
 Documents must be printed, signed and then returned either by fax 
 (using the fax number on the form) or as scanned images via email 

@@ -15,7 +15,11 @@ Releases are broadly categorized as:
 For all major and minor releases, you must engage in a 'release review'.
 Release reviews are not required for bug-fix/service releases.
 
-image::images/release-cycle.png["The release cycle"]
+[graphviz, dot-example, svg]
+.The release cycle
+----
+include::../../dotfiles/release-cycle.dot[]
+----
 
 [[releases-plan]]
 A project plan is 'required' for each major and minor project release.
@@ -86,7 +90,11 @@ A 'release review' requires review documentation and an intellectual
 property (IP) log check. The review process must be initiated at least
 two weeks in advance of the anticipated 'review' date.
 
-image::images/release-review.png["Release review work flow"]
+[graphviz, dot-example, svg]
+.Release review work flow
+----
+include::../../dotfiles/release-review.dot[]
+----
 
 Prepare the review documentation well in advance of the start of the
 review period. The release record which contains your project plan

@@ -281,7 +281,10 @@ pulls information out of source code repositories.
 
 The IP Log generator pulls information from multiple location to assemble the log:
 
-image::images/ip-log-generator.png[]
+[graphviz, dot-example, svg]
+----
+include::../../dotfiles/ip-log-generator.dot[]
+----
 
 * Third-party libraries used by the project come from _IPZilla_;
 * The _Dash_ process scans the project source code repositories to assess committer activity;

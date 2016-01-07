@@ -1,3 +1,4 @@
+ifndef::imgsdir[:imgsdir: ../images]
 [[pmi]]
 Project Management Infrastructure (PMI)
 ---------------------------------------
@@ -235,7 +236,7 @@ some _review_ type information as part of a release record. A project
 can have multiple review records; as release reviews are the most common
 form of review, most review records will be joined to a release record.
 
-image::images/ProjectsReleasesReviews.png["Releases and Reviews"]
+image::{imgsdir}/ProjectsReleasesReviews.png["Releases and Reviews"]
 
 A review record, however, does not require a release association. Some
 reviews are associated with proposals. Other have no other association

@@ -1,3 +1,4 @@
+ifndef::imgsdir[:imgsdir: ../images]
 [[starting]]
 Starting an Open Source Project at {forgeName}
 ----------------------------------------------
@@ -7,7 +8,11 @@ available to the community for review. At the end of the 'community
 review' period, we engage in a 'creation review', and then
 provision the project resources.
 
-image::images/project-creation.png["An overview of the Project Creation Process"]
+[graphviz, dot-example, svg]
+.An overview of the Project Creation Process
+----
+include::../../dotfiles/project-creation.dot[]
+----
 
 Use the {createurl}[web form] to create a new project proposal. 
 Instructions are provided on the form. All new proposals are created
@@ -94,7 +99,11 @@ process. Before you commit any code into your project repository, you must
 submit your project's <<ip-initial-contribution,'initial contribution'>> and
 list of third-party libraries for review by the IP team.
 
-image::images/post-creation.png["Post creation activities"] 
+[graphviz, dot-example, svg]
+.Post creation activities
+----
+include::../../dotfiles/post-creation.dot[]
+----
 
 Do not commit any code to your project's source code repository until after
 you receive approval for the IP Team. Once you've received that approval,
@@ -114,7 +123,7 @@ project team's progress in practicing the open and public processes
 necessary to establish the three communities (developers, adopters, 
 and users) around the project.
 
-image::images/Egg-incubation.png["The Incubation Logo"]
+image::{imgsdir}/Egg-incubation.png["The Incubation Logo"]
 
 In order to alert potential consumers of the incubating nature,
 projects in the incubation phase must include 'incubation branding':

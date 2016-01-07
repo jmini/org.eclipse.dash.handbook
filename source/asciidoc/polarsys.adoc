@@ -1,4 +1,5 @@
-include::config.adoc[]
+
+include::_config.adoc[]
 
 :forgeName: PolarSys
 :aforgeName: a PolarSys
@@ -18,24 +19,24 @@ PolarSys Project Handbook
 
 Copyright (C) 2015 Eclipse Foundation, Inc., Made available under the Eclipse Public License v 1.0
 
-include::chapters/preamble.adoc[]
+include::chapters/_preamble.adoc[]
 
-include::chapters/starting.adoc[]
+include::chapters/_starting.adoc[]
 
-include::chapters/resources.adoc[]
+include::chapters/_resources.adoc[]
 
-include::chapters/paperwork.adoc[]
+include::chapters/_paperwork.adoc[]
 
-include::chapters/ip.adoc[]
+include::chapters/_ip.adoc[]
 
-include::chapters/release.adoc[]
+include::chapters/_release.adoc[]
 
-include::chapters/pmi.adoc[]
+include::chapters/_pmi.adoc[]
 
-// include::chapters/community.adoc[]
+// include::chapters/_community.adoc[]
 
-// include::chapters/links.adoc[]
+// include::chapters/_links.adoc[]
 
-include::chapters/glossary.adoc[]
+include::chapters/_glossary.adoc[]
 
-include::chapters/contact.adoc[]
+include::chapters/_contact.adoc[]
