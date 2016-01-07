@@ -40,7 +40,7 @@ Documents
 The exact nature of the documentation required is dependent on your
 employments status.
 
-[graphviz, dot-example, svg]
+[graphviz, paperwork, png]
 .Paperwork requirements flowchart.
 ----
 include::../../dotfiles/paperwork.dot[]

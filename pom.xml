@@ -70,7 +70,8 @@
                                 <imagesdir></imagesdir>
                                 <imgsdir>${project.basedir}/source/asciidoc/images</imgsdir>
                                 <toc>left</toc>
-                                <icons>font</icons>
+                                <icons>image</icons>
+                                <iconsdir>${project.basedir}/source/asciidoc/icons</iconsdir>
                                 <sectanchors>true</sectanchors>
                                 <idprefix/>
                                 <idseparator>-</idseparator>

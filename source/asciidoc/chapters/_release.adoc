@@ -15,7 +15,7 @@ Releases are broadly categorized as:
 For all major and minor releases, you must engage in a 'release review'.
 Release reviews are not required for bug-fix/service releases.
 
-[graphviz, dot-example, svg]
+[graphviz, release-cycle, png]
 .The release cycle
 ----
 include::../../dotfiles/release-cycle.dot[]
@@ -90,7 +90,7 @@ A 'release review' requires review documentation and an intellectual
 property (IP) log check. The review process must be initiated at least
 two weeks in advance of the anticipated 'review' date.
 
-[graphviz, dot-example, svg]
+[graphviz, release-review, png]
 .Release review work flow
 ----
 include::../../dotfiles/release-review.dot[]

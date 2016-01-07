@@ -8,7 +8,7 @@ available to the community for review. At the end of the 'community
 review' period, we engage in a 'creation review', and then
 provision the project resources.
 
-[graphviz, dot-example, svg]
+[graphviz, project-creation, png]
 .An overview of the Project Creation Process
 ----
 include::../../dotfiles/project-creation.dot[]
@@ -99,7 +99,7 @@ process. Before you commit any code into your project repository, you must
 submit your project's <<ip-initial-contribution,'initial contribution'>> and
 list of third-party libraries for review by the IP team.
 
-[graphviz, dot-example, svg]
+[graphviz, post-creation, png]
 .Post creation activities
 ----
 include::../../dotfiles/post-creation.dot[]
