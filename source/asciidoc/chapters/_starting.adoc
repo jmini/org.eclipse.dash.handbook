@@ -1,4 +1,5 @@
-ifndef::imgsdir[:imgsdir: ../images]
+ifndef::srcimagesdir[:srcimagesdir: ../../images]
+
 [[starting]]
 Starting an Open Source Project at {forgeName}
 ----------------------------------------------
@@ -123,7 +124,7 @@ project team's progress in practicing the open and public processes
 necessary to establish the three communities (developers, adopters, 
 and users) around the project.
 
-image::{imgsdir}/Egg-incubation.png["The Incubation Logo"]
+image::{srcimagesdir}/Egg-incubation.png["The Incubation Logo"]
 
 In order to alert potential consumers of the incubating nature,
 projects in the incubation phase must include 'incubation branding':

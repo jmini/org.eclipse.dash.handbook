@@ -68,10 +68,10 @@
                             <backend>html5</backend>
                             <attributes>
                                 <imagesdir></imagesdir>
-                                <imgsdir>${project.basedir}/source/asciidoc/images</imgsdir>
-                                <toc>left</toc>
+                                <srcimagesdir>${project.basedir}/source/images</srcimagesdir>
                                 <icons>image</icons>
-                                <iconsdir>${project.basedir}/source/asciidoc/icons</iconsdir>
+                                <iconsdir>${project.basedir}/source/icons</iconsdir>
+                                <toc>left</toc>
                                 <sectanchors>true</sectanchors>
                                 <idprefix/>
                                 <idseparator>-</idseparator>

@@ -1,3 +1,5 @@
+ifndef::srcimagesdir[:srcimagesdir: ../../images]
+
 [[elections]]
 Elections
 ---------

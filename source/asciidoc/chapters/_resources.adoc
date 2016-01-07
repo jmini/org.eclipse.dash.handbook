@@ -1,4 +1,5 @@
-ifndef::imgsdir[:imgsdir: ../images]
+ifndef::srcimagesdir[:srcimagesdir: ../../images]
+
 [[project-resources-and-services]]
 Project Resources and Services
 ------------------------------
@@ -169,12 +170,12 @@ GitHub pull requests to ensure that the contributor has a valid CLA on file, and
 the commit has been "signed-off" as required. Project committers should only merge pull 
 _green_ requests:
 
-image::{imgsdir}/Github-cla-success.png[]
+image::{srcimagesdir}/Github-cla-success.png[]
 
 The GitHub API does not give us a means of absolutely denying a merge; all we can 
 do is warn you that the contributors have not signed a CLA:
 
-image::{imgsdir}/Github-cla-failure.png[]
+image::{srcimagesdir}/Github-cla-failure.png[]
 
 Do not merge unless you are absolutely certain that the contributer does have a 
 valid CLA on file (e.g. the Contributor License Agreement Lookup Tool confirms 

@@ -1,3 +1,4 @@
+ifndef::srcimagesdir[:srcimagesdir: ../images]
 
 include::_config.adoc[]
 
